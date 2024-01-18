@@ -9,10 +9,6 @@
 <body>
 <div id="container">
    <netflixintro letter="N">
-     <audio id="netflixSound" autoplay>
-  <source src="netflix.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
     <div class="helper-1">
       <div class="effect-brush">
         <span class="fur-31"></span>
@@ -189,26 +185,5 @@
       <p>Inspired by the Netflix intro</p>
     </div>
 </div>
-
-  <script>
-    let started = false;
-
-    function start() {
-      if (started) {
-        return;
-      }
-      started = true;
-
-      const intro = document.getElementById("container");
-      intro.addEventListener("animationstart", playSound);
-    }
-
-    function playSound() {
-      const audio = new Audio("netflix.mp3");
-      audio.play();
-    }
-
-    window.addEventListener("load", start);
-  </script>
 </body>
 </html>
