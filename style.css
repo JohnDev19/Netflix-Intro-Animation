@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "BenguiatITCW01-BoldCn";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.eot") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
 html,
 body {
   margin: 0;
@@ -996,4 +1003,27 @@ body {
   100% {
     background-color: rgba(228, 9, 19, 0);
   }
+}
+
+.end-credits {
+  color: #ffffff;
+  font-family: "BenguiatITCW01-BoldCn";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fadeIn 7s ease-in-out forwards;
+  text-shadow: 0 0 2vmin rgba(193, 27, 31, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 }
